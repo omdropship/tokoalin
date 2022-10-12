@@ -12,6 +12,10 @@
 img {
   border-radius: 8px;
 }
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+</style>
 	
 </style>
 </head>
@@ -50,6 +54,12 @@ img {
 							<div class="mockup-bg">
 								<img src="dist/images/iphone-hero-bg.svg" alt="iPhone illustration">
 							</div>
+							<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="dist/images/o1.jpg" style="width:100%">
+  <img class="mySlides" src="dist/images/o2.jpg" style="width:100%">
+  <img class="mySlides" src="dist/images/o3.jpg" style="width:100%">
+</div>
+							
 							<img class="device-mockup" src="dist/images/o1.jpg" alt="iPhone Hero"><br/>
 							</div>
 								
@@ -262,5 +272,22 @@ table.GeneratedTable thead {
     </div>
 
     <script src="dist/js/main.min.js"></script>
+			
+			<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 </body>
 </html>
