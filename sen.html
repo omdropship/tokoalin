@@ -55,13 +55,16 @@
 			/* Inputan Formulir */
 			var input_name 			= $("#name").val(),
 			    input_email 		= $("#email").val(),
+                            input_alamat 		= $("#alamat").val(),
+                            input_kecamatan 		= $("#kecamatan").val(),
+                            input_kabupaten		= $("#kabupaten").val(),
 			    input_phone 		= $("#phone").val(),
 			    input_product 		= $("#product").val(),
 			    input_description 	= $("#description").val();
 
 			/* Pengaturan Whatsapp */
 			var walink 		= 'https://web.whatsapp.com/send',
-			    phone 		= '6281360417510',
+			    phone 		= '6285785214622',
 			    text 		= 'Halo saya ingin memesan ',
 			    text_yes	= 'Pesanan Anda berhasil terkirim.',
 			    text_no 	= 'Isilah formulir terlebih dahulu.';
@@ -76,6 +79,9 @@
 				var checkout_whatsapp = walink + '?phone=' + phone + '&text=' + text + '%0A%0A' +
 				    '*Nama* : ' + input_name + '%0A' +
 				    '*Alamat Email* : ' + input_email + '%0A' +
+                                    '*Alamat Lengkap* : ' + input_alamat + '%0A' +
+'*Kecamatan* : ' + input_kecamatan + '%0A' +
+'*Kabupaten* : ' + input_kabupaten + '%0A' +
 				    '*Nomor Kontak / Whatsapp* : ' + input_phone + '%0A' +
 				    '*Produk* : ' + input_product + '%0A' +
 				    '*Catatan* : ' + input_description + '%0A';
