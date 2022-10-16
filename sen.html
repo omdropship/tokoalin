@@ -84,7 +84,9 @@
                             input_kecamatan 		= $("#kecamatan").val(),
                             input_kabupaten		= $("#kabupaten").val(),
 			    input_phone 		= $("#phone").val(),
-			    input_product 		= $("#product").val(),
+			    input_product 		= $("#size").val(),
+                            input_size 		= $("#product").val(),
+		
 			    input_description 	= $("#description").val();
 
 			/* Pengaturan Whatsapp */
@@ -105,11 +107,13 @@
 				    '*Nama* : ' + input_name + '%0A' +
 				    '*Alamat Email* : ' + input_email + '%0A' +
                                     '*Alamat Lengkap* : ' + input_alamat + '%0A' +
-'*Kecamatan* : ' + input_kecamatan + '%0A' +
-'*Kabupaten* : ' + input_kabupaten + '%0A' +
+                                    '*Kecamatan* : ' + input_kecamatan + '%0A' +
+                                    '*Kabupaten* : ' + input_kabupaten + '%0A' +
 				    '*Nomor Kontak / Whatsapp* : ' + input_phone + '%0A' +
 				    '*Produk* : ' + input_product + '%0A' +
-				    '*Catatan* : ' + input_description + '%0A';
+                                    '*Size* : ' + input_size + '%0A' +
+				 				 
+                                    '*Catatan* : ' + input_description + '%0A';
 
 				/* Whatsapp Window Open */
 				window.open(checkout_whatsapp,'_blank');
